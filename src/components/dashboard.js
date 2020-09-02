@@ -22,8 +22,10 @@ export class dashboard extends Component {
                 <div>
                         {this.state.arr.map(item => 
                             <div key={item._id}>
-                                <div>{item.itemname}</div>
-                                <div>{item.price}</div>
+                                <div class="row">
+                                    <div class="col-md-5">{item.itemname}</div>
+                                    <div class="col-md-5">{item.price}</div>
+                                </div>
                             </div>
                         
                         
