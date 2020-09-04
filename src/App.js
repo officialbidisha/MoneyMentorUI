@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import '../node_modules/jquery/dist/jquery';
+import '../node_modules/bootstrap/dist/js/bootstrap';
+import '../node_modules/popper.js'
 import Dashboard from '../src/components/dashboard';
-
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-      <div>
-        <Dashboard/>
-      </div>
+      <BrowserRouter>
+              <div>
+                <Dashboard/>
+              </div>
+      </BrowserRouter>      
   );
 }
 
